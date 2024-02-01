@@ -8,26 +8,26 @@ The system architecture adopts a Retrieval-Augmented Generation (RAG) approach, 
 <img width="1569" alt="Screenshot 2024-02-01 at 11 35 07" src="https://github.com/PedroNunes99/LokaTechAssessment/assets/44478888/f2152d8b-8130-4338-bbbc-6c4c55cd66f6">
 
 ### Requirements
-Python
-Required Python packages are listed in the code.
+- Python
+- Required Python packages are listed in the code.
 ### Setup
 Import necessary modules and libraries.
-Set the environment variable HUGGING_FACE_HUB_API_KEY with the API key for accessing the Hugging Face API.
-Define the path to the directory containing documents (sagemaker_doc_path).
-If using google colab, upload manually the zip file present in the repository before runnning the unzip command available in the code.
+- Set the environment variable HUGGING_FACE_HUB_API_KEY with the API key for accessing the Hugging Face API.
+- Define the path to the directory containing documents (sagemaker_doc_path).
+- If using google colab, upload manually the zip file present in the repository before runnning the unzip command available in the code.
 ### Loading Documents
-Load documents from the specified directory using DirectoryLoader and TextLoader.
+- Load documents from the specified directory using DirectoryLoader and TextLoader.
 ### Text Processing
-Use RecursiveCharacterTextSplitter to split the documents into smaller chunks, facilitating efficient processing.
+- Use RecursiveCharacterTextSplitter to split the documents into smaller chunks, facilitating efficient processing.
 ### Embeddings and Vector Database
-Initialize embeddings using Hugging Face models (HuggingFaceEmbeddings).
-Create a vector database (Chroma) from the document chunks, and optionally save it to disk.
+- Initialize embeddings using Hugging Face models (HuggingFaceEmbeddings).
+- Create a vector database (Chroma) from the document chunks, and optionally save it to disk.
 ### Language Model
-Import a pre-trained language model (from HuggingFaceHub) for text generation and question-answering.
+- Import a pre-trained language model (from HuggingFaceHub) for text generation and question-answering.
 ### Retrieval Chain
-Set up a retrieval chain (RetrievalQA) with the language model and the vector database as retriever.
+- Set up a retrieval chain (RetrievalQA) with the language model and the vector database as retriever.
 ### Processing Responses
-Define functions for processing and printing the question, answer, and sources.
+- Define functions for processing and printing the question, answer, and sources.
 ### Usage Example
 ```
 query1 = "What is SageMaker?"
@@ -46,5 +46,5 @@ sagemaker_documentation/sagemaker-marketplace.md
 ```
 
 ### Important
-Ensure that the Hugging Face API key is kept secure and not shared publicly (in this specific case, the API key is being shown only to the users with reading permissions in this private repository).
-Some parts of the code are commented out for optional features (e.g., loading vector database from disk).
+- Ensure that the Hugging Face API key is kept secure and not shared publicly (in this specific case, the API key is being shown only to the users with reading permissions in this private repository).
+- Some parts of the code are commented out for optional features (e.g., loading vector database from disk).
