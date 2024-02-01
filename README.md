@@ -3,7 +3,7 @@
 This POC is designed for assisting developers in unfamiliar documentation areas, significantly reducing the time spent searching for information. It follows a question-answering approach, allowing users to pose questions to the system related to the uploaded documentation (in this specific context, AWS documentation). The system responds with accurate answers in natural language, accompanied by references to the source documents that informed the response.
 
 ### Architecture of the system
-The system architecture adopts a Retrieval-Augmented Generation (RAG) approach, incorporating an information retrieval component. This component utilizes user input to initially retrieve information from a new data source. Further details on the architecture's functionality are provided above.
+The system architecture adopts a Retrieval-Augmented Generation (RAG) approach, incorporating an information retrieval component. This component utilizes user input to initially retrieve information from a new data source. Further details on the architecture's functionality are provided below.
 
 <img width="1569" alt="Screenshot 2024-02-01 at 11 35 07" src="https://github.com/PedroNunes99/LokaTechAssessment/assets/44478888/f2152d8b-8130-4338-bbbc-6c4c55cd66f6">
 
