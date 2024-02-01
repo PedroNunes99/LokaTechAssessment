@@ -33,7 +33,7 @@ Import necessary modules and libraries.
 query1 = "What is SageMaker?"
 process_llm_response(retrieval_chain.invoke(query1))
 ```
-Output:
+### Output:
 ```
 Question:  What is SageMaker?
 
